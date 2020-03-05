@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/foodon/imports/foodon_product_import.owl" uri="imports/foodon_import.owl"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1582897594973" name="http://purl.obolibrary.org/obo/foodon/imports/foodon_product_import.owl" uri="imports/foodon_import%20(copie).owl"/>
+        <uri id="Automatically generated entry, Timestamp=1582897594973" name="http://www.semanticweb.org/gb5/ontologies/2018/9/fideo" uri="test1/fideo_v1.0.0.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1582897594973" name="duplicate:http://www.semanticweb.org/gb5/ontologies/2018/9/fideo/" uri="fideo_1.0.0%20(copie).owl"/>
+        <uri id="Automatically generated entry, Timestamp=1582897594973" name="duplicate:http://www.semanticweb.org/gb5/ontologies/2018/9/fideo/" uri="fideo_1.0.0-byHand.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1582897594973" name="duplicate:http://www.semanticweb.org/gb5/ontologies/2018/9/fideo/" uri="fideo_1.0.0.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1582897594973" name="http://www.semanticweb.org/gb5/ontologies/2018/9/fideo/imports/chebi_import.owl" uri="imports/chebi_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1582897594973" name="http://www.semanticweb.org/gb5/ontologies/2018/9/fideo/imports/foodon_import.owl" uri="imports/foodon_import.owl"/>
+    </group>
+</catalog>

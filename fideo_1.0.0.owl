@@ -1,0 +1,1402 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY terms "http://purl.org/dc/terms/" >
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY patterns "http://www.co-ode.org/patterns#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY NCBITaxon "http://purl.obolibrary.org/obo/NCBITaxon#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY oboInOwl "http://www.geneontology.org/formats/oboInOwl#" >
+    <!ENTITY semweb "http://www.semanticweb.org/gb5/ontologies/2018/9/fideo/" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/gb5/ontologies/2018/9/fideo/"
+     xml:base="http://www.semanticweb.org/gb5/ontologies/2018/9/fideo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:apollo_sv="http://purl.obolibrary.org/obo/apollo_sv.owl/"
+     xmlns:semweb="http://www.semanticweb.org/gb5/ontologies/2018/9/fideo/"
+     xmlns:patterns="http://www.co-ode.org/patterns#"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:NCBITaxon="http://purl.obolibrary.org/obo/NCBITaxon#"
+     xmlns:efo="http://www.ebi.ac.uk/efo/"
+     xmlns:ncbitaxon="http://purl.obolibrary.org/obo/ncbitaxon#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/gb5/ontologies/2018/9/fideo">
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/dideo/release/2017-11-17/dideo.owl"/>
+        <owl:imports rdf:resource="&semweb;imports/foodon_import.owl"/>
+	<owl:imports rdf:resource="&semweb;imports/chebi_import.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GENEPIO_0001772 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/GENEPIO_0001772"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasSynonym"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+   
+
+
+    <!-- http://www.semanticweb.org/gb5/ontologies/2018/9/FIDEO_00000000 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gb5/ontologies/2018/9/FIDEO_00000000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_59999"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/DRON_00000005"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_59999"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/gb5/ontologies/2018/9/FIDEO_00000003"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A biological process that results in a clinically meaningful change to the response of at least one drug when taken with a food product.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Georgeta Bordea</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">FDI</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">food-drug interaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gb5/ontologies/2018/9/FIDEO_00000001 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gb5/ontologies/2018/9/FIDEO_00000001">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gb5/ontologies/2018/9/FIDEO_0000002"/>
+        <obo:IAO_0000117 xml:lang="en">Georgeta Bordea</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">clinically relevant potential food-drug interaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gb5/ontologies/2018/9/FIDEO_00000003 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gb5/ontologies/2018/9/FIDEO_00000003">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FOODON_00001002"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gb5/ontologies/2018/9/FIDEO_00000004 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gb5/ontologies/2018/9/FIDEO_00000004">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gb5/ontologies/2018/9/FIDEO_0000002"/>
+        <obo:IAO_0000117 xml:lang="en">Georgeta Bordea</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">metabolic potential food-drug interaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gb5/ontologies/2018/9/FIDEO_00000005 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gb5/ontologies/2018/9/FIDEO_00000005">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gb5/ontologies/2018/9/FIDEO_00000004"/>
+        <obo:IAO_0000115 xml:lang="en">A metabolism induction potential food-drug interaction that is about an increase of metabolic activity  because of either an increased expression of the enzyme or inference with how the enzyme contributes to the metabolic process.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Georgeta Bordea</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">metabolism induction potential food-drug interaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gb5/ontologies/2018/9/FIDEO_00000006 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gb5/ontologies/2018/9/FIDEO_00000006">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gb5/ontologies/2018/9/FIDEO_00000004"/>
+        <obo:IAO_0000115 xml:lang="en">A metabolism inhibition potential food-drug interaction that is about an decrease of metabolic activity  because of either a decreased expression of the enzyme or inference with how the enzyme contributes to the metabolic process.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Georgeta Bordea</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">metabolism inhibition potential food-drug interaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gb5/ontologies/2018/9/FIDEO_00000007 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gb5/ontologies/2018/9/FIDEO_00000007">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that makes a statement about a chemical substance being an object in a food-drug interaction.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Georgeta Bordea</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">object chemical substance information</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gb5/ontologies/2018/9/FIDEO_00000008 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gb5/ontologies/2018/9/FIDEO_00000008">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that makes a statement about a food product being an object in a food-drug interaction.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Georgeta Bordea</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">object food information</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gb5/ontologies/2018/9/FIDEO_00000009 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gb5/ontologies/2018/9/FIDEO_00000009">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that makes a statement about a drug product being a precipitant in a food-drug interaction.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Georgeta Bordea</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">precipitant chemical substance information</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gb5/ontologies/2018/9/FIDEO_00000010 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gb5/ontologies/2018/9/FIDEO_00000010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that makes a statement about a drug product being a precipitant in a food-drug interaction.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Georgeta Bordea</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">precipitant food information</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gb5/ontologies/2018/9/FIDEO_00000011 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gb5/ontologies/2018/9/FIDEO_00000011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gb5/ontologies/2018/9/FIDEO_00000000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112 xml:lang="en">In vitro experiments confirmed that furanocoumarins from grapefruit juice are both competitive and mechanism-based inhibitors of CYP3A4.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that represents a food-drug interaction as a directional series of molecular processes.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Georgeta Bordea</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">mechanism of food-drug interaction information</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gb5/ontologies/2018/9/FIDEO_00000013 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gb5/ontologies/2018/9/FIDEO_00000013">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/DIDEO_00000053"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000070"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0302900"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000059"/>
+                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0500001"/>
+                                            </owl:Restriction>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <owl:Class>
+                                                        <owl:unionOf rdf:parseType="Collection">
+                                                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_24431"/>
+                                                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/DRON_00000005"/>
+                                                        </owl:unionOf>
+                                                    </owl:Class>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DIDEO_00000012"/>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <owl:Class>
+                                                        <owl:unionOf rdf:parseType="Collection">
+                                                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_24431"/>
+                                                            <rdf:Description rdf:about="http://www.semanticweb.org/gb5/ontologies/2018/9/FIDEO_00000003"/>
+                                                        </owl:unionOf>
+                                                    </owl:Class>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gb5/ontologies/2018/9/FIDEO_00000019"/>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DIDEO_00000053"/>
+        <rdfs:label xml:lang="en">evidence information from randomized food-drug interaction clinical trial</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gb5/ontologies/2018/9/FIDEO_00000014 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gb5/ontologies/2018/9/FIDEO_00000014">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gb5/ontologies/2018/9/FIDEO_00000007"/>
+        <rdfs:label xml:lang="en">object food chemical substance information</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gb5/ontologies/2018/9/FIDEO_00000015 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gb5/ontologies/2018/9/FIDEO_00000015">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gb5/ontologies/2018/9/FIDEO_00000007"/>
+        <rdfs:label xml:lang="en">object drug chemical substance information</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gb5/ontologies/2018/9/FIDEO_00000016 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gb5/ontologies/2018/9/FIDEO_00000016">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gb5/ontologies/2018/9/FIDEO_00000009"/>
+        <rdfs:label xml:lang="en">precipitant food chemical substance information</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gb5/ontologies/2018/9/FIDEO_00000017 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gb5/ontologies/2018/9/FIDEO_00000017">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gb5/ontologies/2018/9/FIDEO_00000009"/>
+        <rdfs:label xml:lang="en">precipitant drug chemical substance information</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gb5/ontologies/2018/9/FIDEO_00000018 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gb5/ontologies/2018/9/FIDEO_00000018">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <obo:IAO_0000115 xml:lang="en">The role that inheres in a food product or food component and that is realized by being affected by a drug in a food-drug interaction.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Georgeta Bordea</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">object food role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gb5/ontologies/2018/9/FIDEO_00000019 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gb5/ontologies/2018/9/FIDEO_00000019">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <obo:IAO_0000115 xml:lang="en">The role that inheres in a food product or food component and that is realized by affecting a drug pharmacokinetically or pharmacodynamically in a food-drug interaction.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Georgeta Bordea</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">precipitant food role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gb5/ontologies/2018/9/FIDEO_0000002 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gb5/ontologies/2018/9/FIDEO_0000002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DIDEO_00000011"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gb5/ontologies/2018/9/FIDEO_00000010"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DIDEO_00000014"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/gb5/ontologies/2018/9/FIDEO_00000008"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A potential food-drug interaction (PFDI) is an information content entity that specifies the possibility of a food-drug interaction based on either reasonable extrapolation about food-drug interaction mechanisms or a data item created by clinical studies, clinical observation or physiological experiment.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Georgeta Bordea</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">PFDI</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">potential food-drug interaction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gb5/ontologies/2018/9/fideo/FIDEO_00000011 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gb5/ontologies/2018/9/fideo/FIDEO_00000011">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gb5/ontologies/2018/9/FIDEO_00000003"/>
+        <rdfs:label xml:lang="en">basic food product</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gb5/ontologies/2018/9/fideo/FIDEO_00000012 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gb5/ontologies/2018/9/fideo/FIDEO_00000012">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:label xml:lang="en">food component product</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/gb5/ontologies/2018/9/fideo/FIDEO_00000020 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gb5/ontologies/2018/9/fideo/FIDEO_00000020">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_00001261"/>
+        <rdfs:label xml:lang="en">green vegetable food product</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00001666 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00001666">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gb5/ontologies/2018/9/fideo/FIDEO_00000020"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00001620 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00001620">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gb5/ontologies/2018/9/fideo/FIDEO_00000020"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_03306697 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_03306697">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gb5/ontologies/2018/9/fideo/FIDEO_00000020"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00001670 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00001670">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gb5/ontologies/2018/9/fideo/FIDEO_00000020"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00001677 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00001677">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gb5/ontologies/2018/9/fideo/FIDEO_00000020"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00001981 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00001981">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gb5/ontologies/2018/9/fideo/FIDEO_00000020"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00002439 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00002439">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gb5/ontologies/2018/9/fideo/FIDEO_00000020"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00001998 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00001998">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gb5/ontologies/2018/9/fideo/FIDEO_00000020"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00002269 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00002269">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gb5/ontologies/2018/9/fideo/FIDEO_00000020"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_03301852 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_03301852">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gb5/ontologies/2018/9/fideo/FIDEO_00000020"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_03311340 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_03311340">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gb5/ontologies/2018/9/fideo/FIDEO_00000020"/>
+    </owl:Class>
+
+
+    <!-- http://www.semanticweb.org/gb5/ontologies/2018/9/fideo/FIDEO_00000021 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gb5/ontologies/2018/9/fideo/FIDEO_00000021">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gb5/ontologies/2018/9/FIDEO_00000003"/>
+        <rdfs:label xml:lang="en">vitamin K-rich food product</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00001666 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00001666">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gb5/ontologies/2018/9/fideo/FIDEO_00000021"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00001620 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00001620">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gb5/ontologies/2018/9/fideo/FIDEO_00000021"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_03306697 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_03306697">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gb5/ontologies/2018/9/fideo/FIDEO_00000021"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00001670 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00001670">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gb5/ontologies/2018/9/fideo/FIDEO_00000021"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00001677 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00001677">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gb5/ontologies/2018/9/fideo/FIDEO_00000021"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00001981 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00001981">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gb5/ontologies/2018/9/fideo/FIDEO_00000021"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00002439 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00002439">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gb5/ontologies/2018/9/fideo/FIDEO_00000021"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00001998 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00001998">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gb5/ontologies/2018/9/fideo/FIDEO_00000021"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00002269 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00002269">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gb5/ontologies/2018/9/fideo/FIDEO_00000021"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_03301852 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_03301852">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gb5/ontologies/2018/9/fideo/FIDEO_00000021"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_03311340 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_03311340">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gb5/ontologies/2018/9/fideo/FIDEO_00000021"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_03310482 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_03310482">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gb5/ontologies/2018/9/fideo/FIDEO_00000021"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_03301826 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_03301826">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gb5/ontologies/2018/9/fideo/FIDEO_00000021"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00002022 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00002022">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_03315523"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gb5/ontologies/2018/9/fideo/FIDEO_00000021"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_03305236 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_03305236">
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gb5/ontologies/2018/9/fideo/FIDEO_00000021"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_03301357 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_03301357">
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gb5/ontologies/2018/9/fideo/FIDEO_00000021"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/gb5/ontologies/2018/9/fideo/FIDEO_00000023 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gb5/ontologies/2018/9/fideo/FIDEO_00000023">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_03315523"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gb5/ontologies/2018/9/fideo/FIDEO_00000021"/>
+        <rdfs:label xml:lang="en">soya oil</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_03306517 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_03306517">
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gb5/ontologies/2018/9/fideo/FIDEO_00000021"/>
+    </owl:Class>
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00002495 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00002495">
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gb5/ontologies/2018/9/fideo/FIDEO_00000021"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_03301721 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_03301721">
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gb5/ontologies/2018/9/fideo/FIDEO_00000021"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/gb5/ontologies/2018/9/fideo/FIDEO_00000022 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gb5/ontologies/2018/9/fideo/FIDEO_00000022">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gb5/ontologies/2018/9/FIDEO_00000003"/>
+        <rdfs:label xml:lang="en">tyramine-rich food product</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_03310882 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_03310882">
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gb5/ontologies/2018/9/fideo/FIDEO_00000022"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_03302734 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_03302734">
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gb5/ontologies/2018/9/fideo/FIDEO_00000022"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_03301179 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_03301179">
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gb5/ontologies/2018/9/fideo/FIDEO_00000022"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_03312067 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_03312067">
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gb5/ontologies/2018/9/fideo/FIDEO_00000022"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00001013 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00001013">
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gb5/ontologies/2018/9/fideo/FIDEO_00000022"/>
+    </owl:Class>
+ 
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00001248 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00001248">
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gb5/ontologies/2018/9/fideo/FIDEO_00000022"/>
+    </owl:Class>
+ 
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_03301716 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_03301716">
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gb5/ontologies/2018/9/fideo/FIDEO_00000022"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00001014 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00001014">
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gb5/ontologies/2018/9/fideo/FIDEO_00000022"/>
+    </owl:Class>
+
+
+    <!-- http://www.semanticweb.org/gb5/ontologies/2018/9/fideo/FIDEO_00000024 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gb5/ontologies/2018/9/fideo/FIDEO_00000024">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_00001078"/>
+        <rdfs:label xml:lang="en">natto</rdfs:label>
+    </owl:Class>
+
+
+    <!-- http://www.semanticweb.org/gb5/ontologies/2018/9/fideo/FIDEO_00000025 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gb5/ontologies/2018/9/fideo/FIDEO_00000025">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FOODON_00001140"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/gb5/ontologies/2018/9/fideo/FIDEO_00000026"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_00001156"/>
+        <rdfs:label xml:lang="en">pomegranate juice</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/gb5/ontologies/2018/9/fideo/FIDEO_00000026 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gb5/ontologies/2018/9/fideo/FIDEO_00000026">
+
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_00001057"/>
+        <rdfs:label xml:lang="en">pomegranate food product</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/gb5/ontologies/2018/9/fideo/FIDEO_00000027 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gb5/ontologies/2018/9/fideo/FIDEO_00000027">
+
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_00001151"/>
+        <rdfs:label xml:lang="en">pomelo food product</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/gb5/ontologies/2018/9/fideo/FIDEO_00000028 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gb5/ontologies/2018/9/fideo/FIDEO_00000028">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FOODON_00002472"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_03430150"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gb5/ontologies/2018/9/fideo/FIDEO_00000027"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
+        <obo:IAO_0000412>http://langual.org</obo:IAO_0000412>
+        <oboInOwl:hasDbXref>SUBSET_SIREN:F1702</oboInOwl:hasDbXref>
+        <oboInOwl:inSubset>subset_siren</oboInOwl:inSubset>
+        <rdfs:label xml:lang="en">pomelo (whole, raw)</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_33130 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33130">
+ 	<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_65265"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_31793 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_31793">
+ 	<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_65265"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_32139 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_32139">
+ 	<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_65265"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_3311 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_3311">
+ 	<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_65265"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_100241 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_100241">
+	<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23765"/>
+    </owl:Class>
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_100241 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_100241">
+	<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23765"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_100246 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_100246">
+	<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23765"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_5280 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_5280">
+	<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23765"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_585948 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_585948">
+ 	<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_38215"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_7577 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_7577">
+ 	<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_38215"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_7550 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_7550">
+ 	<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_38215"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_7565 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_7565">
+ 	<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_38215"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_7575 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_7575">
+ 	<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_38215"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_7582 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_7582">
+ 	<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_38215"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_7582 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_7582">
+ 	<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_49325"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_4903 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_4903">
+ 	<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_49325"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_23965 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_23965">
+ 	<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_49325"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_6888 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_6888">
+	<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50858"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_3207 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_3207">
+	<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50858"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_8378 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_8378">
+	<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50858"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_8382 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_8382">
+	<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50858"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_10033 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_10033">
+	<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23403"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_53766 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_53766">
+	<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23403"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_23965 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_23965">
+ 	<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50114"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_4903 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_4903">
+ 	<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50114"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_6807 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_6807">
+ 	<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35482"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_6807 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_6807">
+ 	<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35482"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_2569 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_2569">
+ 	<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35482"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_119915 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_119915">
+ 	<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35482"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_9652 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_9652">
+ 	<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_38623"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_9453 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_9453">
+ 	<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_37956"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_2896 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_2896">
+ 	<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_37956"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_291342 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_291342">
+ 	<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_37956"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_5050 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_5050">
+ 	<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_37956"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_40050 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_40050">
+ 	<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35660"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_44032 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_44032">
+ 	<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35660"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_63621 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_63621">
+ 	<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35660"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_82941 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_82941">
+ 	<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35660"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_39548 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_39548">
+ 	<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35664"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_40303 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_40303">
+ 	<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35664"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_63618 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_63618">
+ 	<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35664"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_38545 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_38545">
+ 	<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35664"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_9150 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_9150">
+ 	<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35664"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_9139 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_9139">
+ 	<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_71942"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_71940 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_71940">
+ 	<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_71942"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_7772 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_7772">
+ 	<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_49200"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_4392 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_4392">
+	<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_26895"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_50845 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_50845">
+	<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_26895"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_6805 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_6805">
+	<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_26895"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_50694 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_50694">
+	<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_26895"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_27701 -->
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_27701">
+	<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_26895"/>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/gb5/ontologies/2018/9/fideo/FIDEO_00000029 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gb5/ontologies/2018/9/fideo/FIDEO_00000029">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000311"/>
+        <rdfs:label xml:lang="en">Stockley’s Drug Interactions 2008</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://www.semanticweb.org/gb5/ontologies/2018/9/fideo/FIDEO_00000030 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gb5/ontologies/2018/9/fideo/FIDEO_00000030">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000311"/>
+        <rdfs:label xml:lang="en">Stockley’s Drug Interactions 2016</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <owl:NamedIndividual rdf:about="#celeryPUVAPotentialFDI"> 
+       	<rdf:type rdf:resource="http://www.semanticweb.org/gb5/ontologies/2018/9/FIDEO_0000002"/> 
+    </owl:NamedIndividual>
+
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00001002 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/FOODON_00001002">
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/gb5/ontologies/2018/9/FIDEO_00000003"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gb5/ontologies/2018/9/FIDEO_00000003 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gb5/ontologies/2018/9/FIDEO_00000003"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+    <rdf:Description rdf:about="http://www.semanticweb.org/gb5/ontologies/2018/9/FIDEO_00000003">
+        <obo:IAO_0000115>A substance, usually composed primarily of carbohydrates, fats, water and/or proteins, that can be eaten or drunk by an animal or human being for nutrition or pleasure.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">food product</rdfs:label>
+    </rdf:Description>
+
+
+
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
